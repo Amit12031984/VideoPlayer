@@ -1,0 +1,89 @@
+:root
+{
+    --bgcolor : orange;
+}
+
+html
+{
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.progressbar-range
+{
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+}
+.progressbar
+{
+    width: 0%;
+    height: 10px;
+    background-color: var(--bgcolor);
+    border-radius: 5px;
+}
+.volume-range
+{
+    width: 150px;
+    height: 7px;
+    background-color: black;
+    border-radius: 5px;
+}
+.volume-bar
+{
+    width: 30%;
+    height: 7px;
+    background-color: var(--bgcolor);
+    border-radius: 5px;
+}
+.volume
+{
+    display: flex;
+    align-items: center;
+}
+.controls-left
+{
+    display: flex;
+}
+.play-controls , .volume-controls , .volume-range
+{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.controls-right
+{
+    display: flex;
+}
+.time
+{
+    display: flex;
+}
+.speed,.time,.fullscreen
+{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.controls-group
+{
+    display: flex;
+    justify-content: space-between;
+}
+#play:hover , .fa-volume-up:hover
+{
+    color: grey;
+    transition: color 1s;
+}
+video
+{
+    width: 100%;
+    height: 70%;
+}
+.player-container
+{
+    width: 75%;
+}
